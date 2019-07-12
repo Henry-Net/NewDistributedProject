@@ -1,0 +1,9 @@
+F:\NewProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.deps.json
+F:\NewProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.dll
+F:\NewProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.pdb
+F:\NewProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.csproj.CoreCompileInputs.cache
+F:\NewProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.AssemblyInfoInputs.cache
+F:\NewProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.AssemblyInfo.cs
+F:\NewProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.dll
+F:\NewProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.pdb
+F:\NewProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.csprojAssemblyReference.cache

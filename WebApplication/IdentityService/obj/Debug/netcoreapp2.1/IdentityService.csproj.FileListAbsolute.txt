@@ -1,0 +1,14 @@
+F:\NewProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\IdentityService.deps.json
+F:\NewProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\IdentityService.runtimeconfig.json
+F:\NewProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\IdentityService.runtimeconfig.dev.json
+F:\NewProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\IdentityService.dll
+F:\NewProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\IdentityService.pdb
+F:\NewProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.csproj.CoreCompileInputs.cache
+F:\NewProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.RazorAssemblyInfo.cache
+F:\NewProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.RazorAssemblyInfo.cs
+F:\NewProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.AssemblyInfoInputs.cache
+F:\NewProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.AssemblyInfo.cs
+F:\NewProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.RazorTargetAssemblyInfo.cache
+F:\NewProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.dll
+F:\NewProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.pdb
+F:\NewProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.csprojAssemblyReference.cache

@@ -1,0 +1,17 @@
+F:\NewProject\WebApplication\User.API\bin\Debug\netcoreapp2.1\User.API.deps.json
+F:\NewProject\WebApplication\User.API\bin\Debug\netcoreapp2.1\User.API.runtimeconfig.json
+F:\NewProject\WebApplication\User.API\bin\Debug\netcoreapp2.1\User.API.runtimeconfig.dev.json
+F:\NewProject\WebApplication\User.API\bin\Debug\netcoreapp2.1\User.API.dll
+F:\NewProject\WebApplication\User.API\bin\Debug\netcoreapp2.1\User.API.pdb
+F:\NewProject\WebApplication\User.API\bin\Debug\netcoreapp2.1\EntityModels.dll
+F:\NewProject\WebApplication\User.API\bin\Debug\netcoreapp2.1\EntityModels.pdb
+F:\NewProject\WebApplication\User.API\obj\Debug\netcoreapp2.1\User.API.csprojAssemblyReference.cache
+F:\NewProject\WebApplication\User.API\obj\Debug\netcoreapp2.1\User.API.csproj.CoreCompileInputs.cache
+F:\NewProject\WebApplication\User.API\obj\Debug\netcoreapp2.1\User.API.RazorAssemblyInfo.cache
+F:\NewProject\WebApplication\User.API\obj\Debug\netcoreapp2.1\User.API.RazorAssemblyInfo.cs
+F:\NewProject\WebApplication\User.API\obj\Debug\netcoreapp2.1\User.API.AssemblyInfoInputs.cache
+F:\NewProject\WebApplication\User.API\obj\Debug\netcoreapp2.1\User.API.AssemblyInfo.cs
+F:\NewProject\WebApplication\User.API\obj\Debug\netcoreapp2.1\User.API.RazorTargetAssemblyInfo.cache
+F:\NewProject\WebApplication\User.API\obj\Debug\netcoreapp2.1\User.API.csproj.CopyComplete
+F:\NewProject\WebApplication\User.API\obj\Debug\netcoreapp2.1\User.API.dll
+F:\NewProject\WebApplication\User.API\obj\Debug\netcoreapp2.1\User.API.pdb
