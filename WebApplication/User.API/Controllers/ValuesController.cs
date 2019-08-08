@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using User.API.Dtos;
 using Microsoft.AspNetCore.Http;
 using EntityModels.User;
+using Newtonsoft.Json;
 
 namespace User.API.Controllers
 {
@@ -59,9 +60,16 @@ namespace User.API.Controllers
 
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            var users = await _userDbContext.ClientUser.AsNoTracking().ToListAsync();
+            return Ok(users);
+        }
+
+
         [HttpPost]
         [Route("GetOrCreat")]
-        
         public async Task<IActionResult> GetOrCreateUser(string phone)
         {
             
@@ -77,6 +85,7 @@ namespace User.API.Controllers
                 {
                     userMod = new ClientUser { PhoneNumber = phone };
                     _userDbContext.Add(userMod);
+                    _userDbContext.SaveChanges();
                 }
                 return Ok(userMod.Id);
             }

@@ -4,17 +4,27 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net;
+using DnsClient;
+using IdentityService.Dtos;
+using Microsoft.Extensions.Options;
 
 namespace IdentityService.Services
 {
     public class UserService : IUserService
     {
         private HttpClient _httpClient;
-        private readonly string userServiceUrl = "http://localhost:6001";
+        //private readonly string userServiceUrl = "http://localhost:6001";
+        private  string userServiceUrl;
 
-        public UserService(HttpClient httpClient)
+        public UserService(HttpClient httpClient, IOptions<ServiceDisvoveryOptions> options,IDnsQuery dns)
         {
             _httpClient = httpClient;
+            var address = dns.ResolveService("service.consul", options.Value.ServiceName);
+            var addressList = address.First().AddressList;
+            var host = addressList.Any()? addressList.First().ToString():address.First().HostName;
+            var port = address.First().Port;
+            userServiceUrl = $"http://{host}:{port}";
+
         }
 
 

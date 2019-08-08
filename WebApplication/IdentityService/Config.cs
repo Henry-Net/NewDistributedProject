@@ -46,7 +46,7 @@ namespace IdentityService
 
                     //默认情况下，客户端无权访问任何资源 - 通过添加相应的范围名称来指定允许的资源
                     AllowedScopes = new List<string>{
-                        "user_api",
+                        "gateway_api",
                         IdentityServerConstants.StandardScopes.OfflineAccess,
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
@@ -60,7 +60,7 @@ namespace IdentityService
         {
             return new List<ApiResource>
             {
-                new ApiResource("user_api", "User API service")
+                new ApiResource("gateway_api", "Gateway API service")
             };
         }
 

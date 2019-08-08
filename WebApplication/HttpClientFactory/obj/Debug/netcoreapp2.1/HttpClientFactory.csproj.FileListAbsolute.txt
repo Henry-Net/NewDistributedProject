@@ -1,0 +1,6 @@
+D:\Henry\NewDistributedProject-master\WebApplication\HttpClientFactory\obj\Debug\netcoreapp2.1\HttpClientFactory.csprojAssemblyReference.cache
+D:\Henry\NewDistributedProject-master\WebApplication\HttpClientFactory\obj\Debug\netcoreapp2.1\HttpClientFactory.csproj.CoreCompileInputs.cache
+D:\Henry\NewDistributedProject-master\WebApplication\HttpClientFactory\obj\Debug\netcoreapp2.1\HttpClientFactory.RazorAssemblyInfo.cache
+D:\Henry\NewDistributedProject-master\WebApplication\HttpClientFactory\obj\Debug\netcoreapp2.1\HttpClientFactory.RazorAssemblyInfo.cs
+D:\Henry\NewDistributedProject-master\WebApplication\HttpClientFactory\obj\Debug\netcoreapp2.1\HttpClientFactory.AssemblyInfoInputs.cache
+D:\Henry\NewDistributedProject-master\WebApplication\HttpClientFactory\obj\Debug\netcoreapp2.1\HttpClientFactory.AssemblyInfo.cs

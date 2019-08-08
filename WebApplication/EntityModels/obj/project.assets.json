@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\NewProject\\WebApplication\\EntityModels\\EntityModels.csproj",
+      "projectUniqueName": "F:\\NewProject\\DistributedProject\\WebApplication\\EntityModels\\EntityModels.csproj",
       "projectName": "EntityModels",
-      "projectPath": "F:\\NewProject\\WebApplication\\EntityModels\\EntityModels.csproj",
+      "projectPath": "F:\\NewProject\\DistributedProject\\WebApplication\\EntityModels\\EntityModels.csproj",
       "packagesPath": "C:\\Users\\zhu\\.nuget\\packages\\",
-      "outputPath": "F:\\NewProject\\WebApplication\\EntityModels\\obj\\",
+      "outputPath": "F:\\NewProject\\DistributedProject\\WebApplication\\EntityModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
