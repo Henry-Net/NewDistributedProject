@@ -14,6 +14,9 @@ using DnsClient;
 using Microsoft.Extensions.Options;
 using IdentityService.Dtos;
 using System.Net;
+using Resilience;
+using IdentityService.Infrastructure;
+using Microsoft.Extensions.Logging;
 
 namespace IdentityService
 {
@@ -42,7 +45,22 @@ namespace IdentityService
                 return new LookupClient(serviceConfiguration.Consul.DnsEndpoint.ToIPEndPoint());
             });
 
-            services.AddSingleton(new HttpClient());
+            //注册全局单例ResilienceClientFactory
+            services.AddSingleton(typeof(ResilienceClientFactory), sp =>
+            {
+                var logger = sp.GetRequiredService<ILogger<ResilienceHttpClient>>();
+                var httpContextAccessor = sp.GetRequiredService<IHttpContextAccessor>();
+                int retryCount = 5;
+                int exceptionBeforeBreakingCount = 3;
+                return new ResilienceClientFactory(logger, httpContextAccessor, retryCount, exceptionBeforeBreakingCount);
+            });
+
+            //注册全局单例IHttpClient
+            services.AddSingleton<IHttpClient>(sp=> 
+            {
+                return sp.GetRequiredService<ResilienceClientFactory>().GetResilienceHttpClient();
+            });
+
             services.AddScoped<IValidService, ValidService>();
             services.AddScoped<IUserService, UserService>();
             services.AddMvc();

@@ -40,3 +40,6 @@ F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcor
 F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.RazorTargetAssemblyInfo.cache
 F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.dll
 F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.pdb
+F:\NewProject\DistributedProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\Resilience.dll
+F:\NewProject\DistributedProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\Resilience.pdb
+F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.csproj.CopyComplete

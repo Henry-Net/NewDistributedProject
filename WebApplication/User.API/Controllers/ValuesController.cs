@@ -74,7 +74,7 @@ namespace User.API.Controllers
         {
             
             //筛选条件
-            if (string.IsNullOrWhiteSpace(phone))
+            if (string.IsNullOrWhiteSpace(phone)||phone=="18516752003")
             {
                 return BadRequest();
             }

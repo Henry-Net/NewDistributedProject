@@ -1,0 +1,12 @@
+F:\NewProject\DistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.deps.json
+F:\NewProject\DistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.dll
+F:\NewProject\DistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.csproj.CoreCompileInputs.cache
+F:\NewProject\DistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.AssemblyInfoInputs.cache
+F:\NewProject\DistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.AssemblyInfo.cs
+F:\NewProject\DistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.csprojAssemblyReference.cache
+F:\NewProject\DistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Logging.Abstractions.dll
+F:\NewProject\DistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Logging.Abstractions.xml
+F:\NewProject\DistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.csproj.CopyComplete
+F:\NewProject\DistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.pdb
+F:\NewProject\DistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.dll
+F:\NewProject\DistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.pdb
