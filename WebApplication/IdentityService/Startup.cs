@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using IdentityServer4;
+using IdentityServer4.Services;
 using IdentityService.Services;
 using System.Net.Http;
 using Microsoft.Extensions.Configuration;
@@ -17,6 +18,7 @@ using System.Net;
 using Resilience;
 using IdentityService.Infrastructure;
 using Microsoft.Extensions.Logging;
+using IdentityService.Authentication;
 
 namespace IdentityService
 {
@@ -36,6 +38,8 @@ namespace IdentityService
                  .AddInMemoryIdentityResources(Config.GetIdentityResources())
                  .AddInMemoryApiResources(Config.GetApis())
                  .AddInMemoryClients(Config.GetClients());
+
+            services.AddTransient<IProfileService, ProfileService>();
 
             services.AddOptions();
             services.Configure<ServiceDisvoveryOptions>(Configuration.GetSection("ServiceDiscovery"));

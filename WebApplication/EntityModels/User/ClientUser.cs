@@ -27,5 +27,8 @@ namespace EntityModels.User
         [MaxLength(10)]
         public string MassageCode { get; set; }
 
+        [MaxLength(100)]
+        public string Company { get; set; }
+
     }
 }

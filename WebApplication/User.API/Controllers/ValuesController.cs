@@ -13,7 +13,7 @@ namespace User.API.Controllers
 {
     [Route("api/[controller]")]
     //[ApiController]
-    public class ValuesController : ControllerBase
+    public class ValuesController : AuthenticationController
     {
 
         #region 注释（没用部分）
@@ -68,29 +68,7 @@ namespace User.API.Controllers
         }
 
 
-        [HttpPost]
-        [Route("GetOrCreat")]
-        public async Task<IActionResult> GetOrCreateUser(string phone)
-        {
-            
-            //筛选条件
-            if (string.IsNullOrWhiteSpace(phone)||phone=="18516752003")
-            {
-                return BadRequest();
-            }
-            else
-            {
-                var userMod = await _userDbContext.ClientUser.AsNoTracking().FirstOrDefaultAsync(user => user.PhoneNumber == phone);
-                if (userMod==null)
-                {
-                    userMod = new ClientUser { PhoneNumber = phone };
-                    _userDbContext.Add(userMod);
-                    _userDbContext.SaveChanges();
-                }
-                return Ok(userMod.Id);
-            }
-           
-        }
+        
 
 
     }

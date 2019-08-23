@@ -14,6 +14,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Hosting.Server.Features;
 using Consul;
+using IdentityServer4.AccessTokenValidation;
 
 namespace User.API
 {
@@ -46,6 +47,12 @@ namespace User.API
 
             var connection = Configuration.GetConnectionString("UserDatabase");
             services.AddDbContext<UserDbContext>(o=>o.UseSqlServer(connection));
+
+            services.AddAuthentication("Bearer").AddIdentityServerAuthentication(option => {
+                option.RequireHttpsMetadata = false;
+                option.Authority = "http://192.168.103.19:6002";
+                option.ApiName = "user_api";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -70,6 +77,7 @@ namespace User.API
             {
                 RegisterStopped(app, serviceOptions, consul);
             });
+            app.UseAuthentication();
             app.UseMvc();
         }
 

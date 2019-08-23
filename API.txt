@@ -1,0 +1,26 @@
+
+API.Gateway
+http://192.168.103.19:5000
+
+Get
+/users  =>  6001 api/values
+Post
+/connect/token   =>  6002 /connect/token
+
+
+IdentityService
+http://192.168.103.19:6002
+
+
+User.API
+http://192.168.103.19:6001
+Get     
+api/values
+Post
+api/check/GetOrCreat
+
+
+保护资源valuecontroller不能加[Authorize]
+因为认证需要访问GetOrCreateUser
+
+受保护的资源如果需要认证的话 需要注册 services.AddAuthentication()配置 一般是Bearer 和当前api scope的名字

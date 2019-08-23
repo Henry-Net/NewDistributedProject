@@ -8,6 +8,7 @@ using DnsClient;
 using IdentityService.Dtos;
 using Microsoft.Extensions.Options;
 using Resilience;
+using Newtonsoft.Json;
 
 namespace IdentityService.Services
 {
@@ -29,7 +30,7 @@ namespace IdentityService.Services
         }
 
 
-        public async Task<int> CheckOrCreate(string phone)
+        public async Task<UserIdentityInfo> CheckOrCreate(string phone)
         {
             int userId = 0;
             Dictionary<string, string> postForm = new Dictionary<string, string> { { "phone", phone } };
@@ -37,12 +38,12 @@ namespace IdentityService.Services
             //var content = new FormUrlEncodedContent(postForm);
             try
             {
-                var response = await _httpClient.PostAsync(userServiceUrl + @"/api/Values/GetOrCreat", postForm);
+                var response = await _httpClient.PostAsync(userServiceUrl + @"/api/Check/GetOrCreat", postForm);
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     var responseResult = await response.Content.ReadAsStringAsync();
-                    int.TryParse(responseResult, out userId);
-                    return userId;
+                    var userIderntityInfo = JsonConvert.DeserializeObject<UserIdentityInfo>(responseResult);
+                    return userIderntityInfo;
                 }
             }
             catch (Exception)
@@ -53,7 +54,7 @@ namespace IdentityService.Services
            
 
            
-            return userId;
+            return null;
         }
     }
 }
