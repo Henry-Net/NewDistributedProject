@@ -1,6 +1,6 @@
 
 API.Gateway
-http://192.168.103.19:5000
+http://127.0.0.1:5000
 
 Get
 /users  =>  6001 api/values
@@ -9,11 +9,11 @@ Post
 
 
 IdentityService
-http://192.168.103.19:6002
+http://127.0.0.1:6002
 
 
 User.API
-http://192.168.103.19:6001
+http://127.0.0.1:6001
 Get     
 api/values
 Post

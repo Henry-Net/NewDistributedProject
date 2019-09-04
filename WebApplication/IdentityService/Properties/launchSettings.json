@@ -18,7 +18,7 @@
     "IdentityService": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://192.168.103.19:6002",
+      "applicationUrl": "http://127.0.0.1:6002",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -50,7 +50,7 @@ namespace User.API
 
             services.AddAuthentication("Bearer").AddIdentityServerAuthentication(option => {
                 option.RequireHttpsMetadata = false;
-                option.Authority = "http://192.168.103.19:6002";
+                option.Authority = "http://127.0.0.1:6002";
                 option.ApiName = "user_api";
             });
         }

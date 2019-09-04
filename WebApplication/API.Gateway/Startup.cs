@@ -23,7 +23,7 @@ namespace API.Gateway
             var authenticationProviderKey = "TestKey";
             Action<IdentityServerAuthenticationOptions> options = o =>
             {
-                o.Authority = "http://192.168.103.19:6002";
+                o.Authority = "http://127.0.0.1:6002";
                 o.ApiName = "gateway_api";
                 o.SupportedTokens = SupportedTokens.Both;
                 o.RequireHttpsMetadata = false;

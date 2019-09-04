@@ -5,12 +5,29 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "192.168.103.19",
+          "Host": "127.0.0.1",
           "Port": 6001
         }
       ],
       "UpstreamPathTemplate": "/users",
-      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamHttpMethod": [ "Get" ]
+      //"ReRouteIsCaseSensitive": false,
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "TestKey",
+      //  "AllowedScopes": []
+      //} //加入这一段表示需要进行授权认证 必须headers携带Authorization Bearer空格token 才能进行访问
+    },
+    {
+      "DownstreamPathTemplate": "/api/search",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "127.0.0.1",
+          "Port": 6003
+        }
+      ],
+      "UpstreamPathTemplate": "/resources",
+      "UpstreamHttpMethod": [ "Get" ]
       //"ReRouteIsCaseSensitive": false,
       //"AuthenticationOptions": {
       //  "AuthenticationProviderKey": "TestKey",
@@ -22,7 +39,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "192.168.103.19",
+          "Host": "127.0.0.1",
           "Port": 6002
         }
       ],
@@ -31,6 +48,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://192.168.103.19:5000"
+    "BaseUrl": "http://127.0.0.1:5000"
   }
 }
