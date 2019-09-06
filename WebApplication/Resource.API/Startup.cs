@@ -46,7 +46,11 @@ namespace Resource.API
             var connection = Configuration.GetConnectionString("UserDatabase");
             services.AddDbContext<ResourceDbContext>(o => o.UseSqlServer(connection));
 
-
+            services.AddAuthentication("Bearer").AddIdentityServerAuthentication(option => {
+                option.RequireHttpsMetadata = false;
+                option.Authority = "http://127.0.0.1:6002";
+                option.ApiName = "resource_api";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -71,8 +75,12 @@ namespace Resource.API
             {
                 RegisterStopped(app, serviceOptions, consul);
             });
-
+            app.UseAuthentication();
             app.UseMvc();
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute("default", "api/{controller}/{action}/{option?}");
+            //});
         }
 
         private void RegisterStopped(IApplicationBuilder app,

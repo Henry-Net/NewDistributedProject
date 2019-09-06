@@ -25,3 +25,6 @@ F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreap
 F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.AssemblyInfo.cs
 F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.dll
 F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.pdb
+F:\NewProject\DistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+F:\NewProject\DistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
+F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.csproj.CopyComplete

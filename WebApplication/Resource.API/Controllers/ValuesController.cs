@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace Resource.API.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
-    public class ValuesController : ControllerBase
+    //[ApiController]
+    public class ValuesController : AuthenticationController
     {
         // GET api/values
         [HttpGet]

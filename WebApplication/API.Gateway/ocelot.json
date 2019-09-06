@@ -18,7 +18,8 @@
       //} //加入这一段表示需要进行授权认证 必须headers携带Authorization Bearer空格token 才能进行访问
     },
     {
-      "DownstreamPathTemplate": "/api/search",
+      // 查询数据 不需要认证 没有参数
+      "DownstreamPathTemplate": "/api/SearchResource/{action}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -26,13 +27,21 @@
           "Port": 6003
         }
       ],
-      "UpstreamPathTemplate": "/resources",
+      "UpstreamPathTemplate": "/Resource/{action}",
       "UpstreamHttpMethod": [ "Get" ]
-      //"ReRouteIsCaseSensitive": false,
-      //"AuthenticationOptions": {
-      //  "AuthenticationProviderKey": "TestKey",
-      //  "AllowedScopes": []
-      //} //加入这一段表示需要进行授权认证 必须headers携带Authorization Bearer空格token 才能进行访问
+    },
+    {
+      // 查询数据 不需要认证  有参数
+      "DownstreamPathTemplate": "/api/SearchResource/{action}/{option}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "127.0.0.1",
+          "Port": 6003
+        }
+      ],
+      "UpstreamPathTemplate": "/Resource/{action}/{option}",
+      "UpstreamHttpMethod": [ "Get" ]
     },
     {
       "DownstreamPathTemplate": "/connect/token",
