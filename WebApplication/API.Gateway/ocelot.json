@@ -27,7 +27,7 @@
           "Port": 6003
         }
       ],
-      "UpstreamPathTemplate": "/Resource/{action}",
+      "UpstreamPathTemplate": "/SearchResource/{action}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     {
@@ -40,8 +40,27 @@
           "Port": 6003
         }
       ],
-      "UpstreamPathTemplate": "/Resource/{action}/{option}",
+      "UpstreamPathTemplate": "/SearchResource/{action}/{option}",
       "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    {
+      // 修改数据 需要认证 没有参数
+      "DownstreamPathTemplate": "/api/UpdateResource/{action}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "127.0.0.1",
+          "Port": 6003
+        }
+      ],
+      "UpstreamPathTemplate": "/UpdateResource/{action}",
+      "UpstreamHttpMethod": [ "Post","Delete" ],
+      "ReRouteIsCaseSensitive": false,
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      } //加入这一段表示需要进行授权认证 必须headers携带Authorization Bearer空格token 才能进行访问
     },
     {
       "DownstreamPathTemplate": "/connect/token",

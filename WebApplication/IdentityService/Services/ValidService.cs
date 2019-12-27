@@ -11,5 +11,10 @@ namespace IdentityService.Services
         {
             return true;
         }
+
+        public bool VaildUserName(string userName)
+        {
+            return true;
+        }
     }
 }

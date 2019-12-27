@@ -34,6 +34,7 @@ namespace IdentityService
         {
             var builder = services.AddIdentityServer()
                 .AddExtensionGrantValidator<Authentication.SmsAuthCodeValidator>() //添加IExtensionGrantValidator实现以用于扩展授权。
+                .AddExtensionGrantValidator<Authentication.PasswordValidator>() //添加IExtensionGrantValidator实现以用于扩展授权。
                 .AddDeveloperSigningCredential()
                  .AddInMemoryIdentityResources(Config.GetIdentityResources())
                  .AddInMemoryApiResources(Config.GetApis())

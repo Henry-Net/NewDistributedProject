@@ -8,16 +8,21 @@ namespace IdentityService.Dtos
     public class UserIdentityInfo
     {
         /// <summary>
-        /// 当前用户id 从token subjectId 取得
+        /// 当前用户ClientUserid 从token subjectId 取得
         /// </summary>
         public int UserId { get; set; }
+
+        /// <summary>
+        /// 当前用户UserBasicInfoId
+        /// </summary>
+        public int UserBasicInfoId { get; set; }
         /// <summary>
         /// 用户姓名
         /// </summary>
         public string UserName { get; set; }
         /// <summary>
-        /// 用户公司
+        /// 权限        administrator = 1,ordinary = 2
         /// </summary>
-        public string Company { get; set; }
+        public int RoleType { get; set; }
     }
 }

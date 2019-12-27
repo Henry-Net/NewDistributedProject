@@ -18,7 +18,6 @@ F:\NewProject\DistributedProject\WebApplication\API.Gateway\bin\Debug\netcoreapp
 F:\NewProject\DistributedProject\WebApplication\API.Gateway\bin\Debug\netcoreapp2.2\API.Gateway.dll
 F:\NewProject\DistributedProject\WebApplication\API.Gateway\bin\Debug\netcoreapp2.2\API.Gateway.pdb
 F:\NewProject\DistributedProject\WebApplication\API.Gateway\obj\Debug\netcoreapp2.2\API.Gateway.csprojAssemblyReference.cache
-F:\NewProject\DistributedProject\WebApplication\API.Gateway\obj\Debug\netcoreapp2.2\API.Gateway.csproj.CoreCompileInputs.cache
 F:\NewProject\DistributedProject\WebApplication\API.Gateway\obj\Debug\netcoreapp2.2\API.Gateway.RazorAssemblyInfo.cache
 F:\NewProject\DistributedProject\WebApplication\API.Gateway\obj\Debug\netcoreapp2.2\API.Gateway.RazorAssemblyInfo.cs
 F:\NewProject\DistributedProject\WebApplication\API.Gateway\obj\Debug\netcoreapp2.2\API.Gateway.AssemblyInfoInputs.cache
@@ -26,3 +25,7 @@ F:\NewProject\DistributedProject\WebApplication\API.Gateway\obj\Debug\netcoreapp
 F:\NewProject\DistributedProject\WebApplication\API.Gateway\obj\Debug\netcoreapp2.2\API.Gateway.RazorTargetAssemblyInfo.cache
 F:\NewProject\DistributedProject\WebApplication\API.Gateway\obj\Debug\netcoreapp2.2\API.Gateway.dll
 F:\NewProject\DistributedProject\WebApplication\API.Gateway\obj\Debug\netcoreapp2.2\API.Gateway.pdb
+F:\NewProject\DistributedProject\WebApplication\API.Gateway\bin\Debug\netcoreapp2.2\appsettings.Development.json
+F:\NewProject\DistributedProject\WebApplication\API.Gateway\bin\Debug\netcoreapp2.2\appsettings.json
+F:\NewProject\DistributedProject\WebApplication\API.Gateway\bin\Debug\netcoreapp2.2\ocelot.json
+F:\NewProject\DistributedProject\WebApplication\API.Gateway\bin\Debug\netcoreapp2.2\Properties\launchSettings.json

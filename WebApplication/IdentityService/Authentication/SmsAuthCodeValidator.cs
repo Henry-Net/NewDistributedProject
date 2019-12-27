@@ -42,15 +42,16 @@ namespace IdentityService.Authentication
                 return;
             }
 
-            var userIdentityInfo = await _userService.CheckOrCreate(phone);
+            var userIdentityInfo = await _userService.CheckOrCreateByPhone(phone);
             if (userIdentityInfo == null)
             {
                 context.Result = erroValidationResult;
                 return;
             }
             var claims = new Claim[] {
+                  new Claim("UserBasicInfoId",userIdentityInfo.UserBasicInfoId.ToString()??string.Empty),
                 new Claim("UserName",userIdentityInfo.UserName??string.Empty),
-                new Claim("Company",userIdentityInfo.Company??string.Empty)
+                new Claim("RoleType",userIdentityInfo.RoleType.ToString()??string.Empty)
 
             };
             context.Result = new GrantValidationResult(userIdentityInfo.UserId.ToString(), GrantType,claims);

@@ -8,5 +8,6 @@ namespace IdentityService.Services
     public interface IValidService
     {
         bool VaildMassageCode(string phone, string massageCode);
+        bool VaildUserName(string userName);
     }
 }

@@ -8,6 +8,7 @@ namespace IdentityService.Services
 {
     public interface IUserService
     {
-        Task<UserIdentityInfo> CheckOrCreate(string phone);
+        Task<UserIdentityInfo> CheckOrCreateByPhone(string phone);
+        Task<UserIdentityInfo> CheckByPassword(string name, string password);
     }
 }

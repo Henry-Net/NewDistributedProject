@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using EntityModels.User;
+using User.API.EntityModels;
 
 namespace User.API.Dtos
 {
@@ -16,6 +16,10 @@ namespace User.API.Dtos
 
         public DbSet<ClientUser> ClientUser { get; set; }
 
-        public DbSet<UserInfo> UserInfo { get; set; }
+        public DbSet<ClientUser_BasicInfo> ClientUser_BasicInfo { get; set; }
+
+        public DbSet<AdminRole> AdminRole { get; set; }
+
+        public DbSet<AdminRole_ClientUserBasicInfo> AdminRole_ClientUserBasicInfo { get; set; }
     }
 }

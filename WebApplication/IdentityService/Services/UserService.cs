@@ -30,9 +30,8 @@ namespace IdentityService.Services
         }
 
 
-        public async Task<UserIdentityInfo> CheckOrCreate(string phone)
+        public async Task<UserIdentityInfo> CheckOrCreateByPhone(string phone)
         {
-            int userId = 0;
             Dictionary<string, string> postForm = new Dictionary<string, string> { { "phone", phone } };
 
             //var content = new FormUrlEncodedContent(postForm);
@@ -54,6 +53,32 @@ namespace IdentityService.Services
            
 
            
+            return null;
+        }
+
+        public async Task<UserIdentityInfo> CheckByPassword(string name,string password)
+        {
+            Dictionary<string, string> postForm = new Dictionary<string, string> { { "code", name },{ "password", password } };
+
+            //var content = new FormUrlEncodedContent(postForm);
+            try
+            {
+                var response = await _httpClient.PostAsync(userServiceUrl + @"/api/Check/GetUserByCodeAndPassword", postForm);
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    var responseResult = await response.Content.ReadAsStringAsync();
+                    var userIderntityInfo = JsonConvert.DeserializeObject<UserIdentityInfo>(responseResult);
+                    return userIderntityInfo;
+                }
+            }
+            catch (Exception)
+            {
+                var a = "";
+                throw;
+            }
+
+
+
             return null;
         }
     }

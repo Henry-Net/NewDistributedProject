@@ -20,7 +20,6 @@ F:\NewProject\DistributedProject\WebApplication\EntityModels\bin\Debug\netcoreap
 F:\NewProject\DistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.dll
 F:\NewProject\DistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.pdb
 F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.csprojAssemblyReference.cache
-F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.csproj.CoreCompileInputs.cache
 F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.AssemblyInfoInputs.cache
 F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.AssemblyInfo.cs
 F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.dll

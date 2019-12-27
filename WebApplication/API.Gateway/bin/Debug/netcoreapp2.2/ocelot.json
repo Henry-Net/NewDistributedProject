@@ -1,0 +1,81 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/values",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "127.0.0.1",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/users",
+      "UpstreamHttpMethod": [ "Get" ]
+      //"ReRouteIsCaseSensitive": false,
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "TestKey",
+      //  "AllowedScopes": []
+      //} //加入这一段表示需要进行授权认证 必须headers携带Authorization Bearer空格token 才能进行访问
+    },
+    {
+      // 查询数据 不需要认证 没有参数
+      "DownstreamPathTemplate": "/api/SearchResource/{action}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "127.0.0.1",
+          "Port": 6003
+        }
+      ],
+      "UpstreamPathTemplate": "/SearchResource/{action}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      // 查询数据 不需要认证  有参数
+      "DownstreamPathTemplate": "/api/SearchResource/{action}/{option}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "127.0.0.1",
+          "Port": 6003
+        }
+      ],
+      "UpstreamPathTemplate": "/SearchResource/{action}/{option}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    {
+      // 修改数据 需要认证 没有参数
+      "DownstreamPathTemplate": "/api/UpdateResource/{action}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "127.0.0.1",
+          "Port": 6003
+        }
+      ],
+      "UpstreamPathTemplate": "/UpdateResource/{action}",
+      "UpstreamHttpMethod": [ "Post","Delete" ],
+      "ReRouteIsCaseSensitive": false,
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      } //加入这一段表示需要进行授权认证 必须headers携带Authorization Bearer空格token 才能进行访问
+    },
+    {
+      "DownstreamPathTemplate": "/connect/token",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "127.0.0.1",
+          "Port": 6002
+        }
+      ],
+      "UpstreamPathTemplate": "/connect/token",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://127.0.0.1:5000"
+  }
+}

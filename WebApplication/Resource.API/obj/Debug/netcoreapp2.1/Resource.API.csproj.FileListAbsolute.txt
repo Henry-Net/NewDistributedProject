@@ -3,7 +3,6 @@ F:\NewProject\DistributedProject\WebApplication\Resource.API\bin\Debug\netcoreap
 F:\NewProject\DistributedProject\WebApplication\Resource.API\bin\Debug\netcoreapp2.1\Resource.API.runtimeconfig.dev.json
 F:\NewProject\DistributedProject\WebApplication\Resource.API\bin\Debug\netcoreapp2.1\Resource.API.dll
 F:\NewProject\DistributedProject\WebApplication\Resource.API\obj\Debug\netcoreapp2.1\Resource.API.csprojAssemblyReference.cache
-F:\NewProject\DistributedProject\WebApplication\Resource.API\obj\Debug\netcoreapp2.1\Resource.API.csproj.CoreCompileInputs.cache
 F:\NewProject\DistributedProject\WebApplication\Resource.API\obj\Debug\netcoreapp2.1\Resource.API.RazorAssemblyInfo.cache
 F:\NewProject\DistributedProject\WebApplication\Resource.API\obj\Debug\netcoreapp2.1\Resource.API.RazorAssemblyInfo.cs
 F:\NewProject\DistributedProject\WebApplication\Resource.API\obj\Debug\netcoreapp2.1\Resource.API.AssemblyInfoInputs.cache
@@ -15,3 +14,6 @@ F:\NewProject\DistributedProject\WebApplication\Resource.API\obj\Debug\netcoreap
 F:\NewProject\DistributedProject\WebApplication\Resource.API\bin\Debug\netcoreapp2.1\EntityModels.dll
 F:\NewProject\DistributedProject\WebApplication\Resource.API\bin\Debug\netcoreapp2.1\EntityModels.pdb
 F:\NewProject\DistributedProject\WebApplication\Resource.API\obj\Debug\netcoreapp2.1\Resource.API.csproj.CopyComplete
+F:\NewProject\DistributedProject\WebApplication\Resource.API\bin\Debug\netcoreapp2.1\appsettings.Development.json
+F:\NewProject\DistributedProject\WebApplication\Resource.API\bin\Debug\netcoreapp2.1\appsettings.json
+F:\NewProject\DistributedProject\WebApplication\Resource.API\bin\Debug\netcoreapp2.1\Properties\launchSettings.json

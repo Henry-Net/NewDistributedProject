@@ -46,7 +46,7 @@ namespace User.API
             }));
 
             var connection = Configuration.GetConnectionString("UserDatabase");
-            services.AddDbContext<UserDbContext>(o=>o.UseSqlServer(connection));
+            services.AddDbContext<UserDbContext>(o=>o.UseMySQL(connection));
 
             services.AddAuthentication("Bearer").AddIdentityServerAuthentication(option => {
                 option.RequireHttpsMetadata = false;

@@ -32,7 +32,6 @@ F:\NewProject\DistributedProject\WebApplication\IdentityService\bin\Debug\netcor
 F:\NewProject\DistributedProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\IdentityService.dll
 F:\NewProject\DistributedProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\IdentityService.pdb
 F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.csprojAssemblyReference.cache
-F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.csproj.CoreCompileInputs.cache
 F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.RazorAssemblyInfo.cache
 F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.RazorAssemblyInfo.cs
 F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.AssemblyInfoInputs.cache
@@ -43,3 +42,6 @@ F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcor
 F:\NewProject\DistributedProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\Resilience.dll
 F:\NewProject\DistributedProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\Resilience.pdb
 F:\NewProject\DistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.csproj.CopyComplete
+F:\NewProject\DistributedProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\appsettings.Development.json
+F:\NewProject\DistributedProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\appsettings.json
+F:\NewProject\DistributedProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
