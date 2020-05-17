@@ -37,7 +37,7 @@ namespace IdentityService.Services
             //var content = new FormUrlEncodedContent(postForm);
             try
             {
-                var response = await _httpClient.PostAsync(userServiceUrl + @"/api/Check/GetOrCreat", postForm);
+                var response = await _httpClient.PostAsync(userServiceUrl + @"/api/Check/GetOrCreateUserByPhone", postForm);
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     var responseResult = await response.Content.ReadAsStringAsync();

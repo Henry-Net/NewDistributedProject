@@ -39,7 +39,7 @@ namespace User.API.Controllers
                 var userMod = await _userDbContext.ClientUser.AsNoTracking().FirstOrDefaultAsync(user => user.PhoneNumber == phone);
                 if (userMod == null)
                 {
-                    userMod = new ClientUser { PhoneNumber = phone,ClientUserCode = phone, Password = CommonFunction.CommonFunction.AESEncrypt(phone) };
+                    userMod = new ClientUser { PhoneNumber = phone,ClientUserCode = phone, Password = phone };
                     _userDbContext.Add(userMod);
                     _userDbContext.SaveChanges();
                 }
@@ -73,7 +73,7 @@ namespace User.API.Controllers
 
 
         /// <summary>
-        /// 手机号登录或注册
+        /// 账号密码登录或注册
         /// </summary>
         [HttpPost]
         [Route("GetUserByCodeAndPassword")]
@@ -89,8 +89,8 @@ namespace User.API.Controllers
                 //可以做多步解密加密
                 // 1 . 传输解密
                 // 2 . 数据库加密
-                var aesPassword = CommonFunction.CommonFunction.AESEncrypt(password);
-                var userMod = await _userDbContext.ClientUser.AsNoTracking().FirstOrDefaultAsync(user => user.ClientUserCode == code && user.Password == aesPassword);
+                //var aesPassword = CommonFunction.CommonFunction.AESEncrypt(password);
+                var userMod = await _userDbContext.ClientUser.AsNoTracking().FirstOrDefaultAsync(user => user.ClientUserCode == code && user.Password == password);
                 if (userMod == null)
                 {
                     return BadRequest();
@@ -119,6 +119,21 @@ namespace User.API.Controllers
                 });
             }
 
+        }
+
+        [HttpGet]
+        [Route("GetAll")]
+        public async Task<IActionResult> GetAll()
+        {
+            var userBasicInfo = await _userDbContext.ClientUser_BasicInfo.AsNoTracking().ToListAsync();
+            return Ok(userBasicInfo);
+        }
+        [HttpGet]
+        [Route("GetFirst")]
+        public async Task<IActionResult> GetFirst()
+        {
+            var userBasicInfo = await _userDbContext.ClientUser_BasicInfo.AsNoTracking().FirstOrDefaultAsync();
+            return Ok(userBasicInfo);
         }
     }
 }

@@ -2180,7 +2180,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/2.1.1": {
+      "Microsoft.Extensions.Logging.Abstractions/3.1.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
@@ -4425,6 +4425,7 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Microsoft.AspNetCore.Http": "2.1.1",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.2",
           "Newtonsoft.Json": "12.0.2",
           "Polly": "7.1.0"
         },
@@ -6453,16 +6454,17 @@
         "microsoft.extensions.logging.nuspec"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/2.1.1": {
-      "sha512": "XRzK7ZF+O6FzdfWrlFTi1Rgj2080ZDsd46vzOjadHUB0Cz5kOvDG8vI7caa5YFrsHQpcfn0DxtjS4E46N4FZsA==",
+    "Microsoft.Extensions.Logging.Abstractions/3.1.2": {
+      "sha512": "cIXPw7VVX3fON4uuHwJFmCi0qDl8uY75xZMKB2oM3In0ZDEB1Ee+p9Ti1DSw92AwRtJ2Zh+QG1joTBednJMzvA==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/2.1.1",
+      "path": "microsoft.extensions.logging.abstractions/3.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.3.1.2.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec"
       ]
     },
@@ -12014,27 +12016,24 @@
       "IdentityServer4 >= 2.4.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
+      "Microsoft.Extensions.Logging.Abstractions >= 3.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Newtonsoft.Json >= 12.0.2",
       "Resilience >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\81219\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\81219\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\NewProject\\DistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj",
+      "projectUniqueName": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj",
       "projectName": "IdentityService",
-      "projectPath": "F:\\NewProject\\DistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj",
+      "projectPath": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj",
       "packagesPath": "C:\\Users\\81219\\.nuget\\packages\\",
-      "outputPath": "F:\\NewProject\\DistributedProject\\WebApplication\\IdentityService\\obj\\",
+      "outputPath": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\IdentityService\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\81219\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -12049,8 +12048,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "F:\\NewProject\\DistributedProject\\WebApplication\\Resilience\\Resilience.csproj": {
-              "projectPath": "F:\\NewProject\\DistributedProject\\WebApplication\\Resilience\\Resilience.csproj"
+            "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\Resilience\\Resilience.csproj": {
+              "projectPath": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\Resilience\\Resilience.csproj"
             }
           }
         }
@@ -12083,6 +12082,10 @@
             "target": "Package",
             "version": "[2.1.2, )"
           },
+          "Microsoft.Extensions.Logging.Abstractions": {
+            "target": "Package",
+            "version": "[3.1.2, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -12104,8 +12107,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "检测到的包版本在依赖项约束之外: Microsoft.AspNetCore.App 2.1.1 需要 Microsoft.Extensions.Logging.Abstractions (>= 2.1.1 && < 2.2.0)，但版本 Microsoft.Extensions.Logging.Abstractions 3.1.2 已解决。",
+      "libraryId": "Microsoft.Extensions.Logging.Abstractions",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

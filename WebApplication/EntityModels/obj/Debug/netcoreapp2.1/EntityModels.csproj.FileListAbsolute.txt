@@ -27,3 +27,11 @@ F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreap
 F:\NewProject\DistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
 F:\NewProject\DistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
 F:\NewProject\DistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.csproj.CopyComplete
+D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.AssemblyInfoInputs.cache
+D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.AssemblyInfo.cs
+D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.dll
+D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.pdb
+D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.deps.json
+D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.dll
+D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.pdb
+D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.csprojAssemblyReference.cache

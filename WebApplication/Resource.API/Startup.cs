@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Resource.API.Dtos;
+using Resource.API.Serves;
 
 namespace Resource.API
 {
@@ -32,50 +33,54 @@ namespace Resource.API
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddOptions();
             services.Configure<ServiceDisvoveryOptions>(Configuration.GetSection("ServiceDiscovery"));
-            services.AddSingleton<IConsulClient>(p => new ConsulClient(cfg =>
-            {
-                var serviceConfiguration = p.GetRequiredService<IOptions<ServiceDisvoveryOptions>>().Value;
+            //services.AddSingleton<IConsulClient>(p => new ConsulClient(cfg =>
+            //{
+            //    var serviceConfiguration = p.GetRequiredService<IOptions<ServiceDisvoveryOptions>>().Value;
 
-                if (!string.IsNullOrEmpty(serviceConfiguration.Consul.HttpEndpoint))
-                {
-                    // if not configured, the client will use the default value "127.0.0.1:8500"
-                    cfg.Address = new Uri(serviceConfiguration.Consul.HttpEndpoint);
-                }
-            }));
+            //    if (!string.IsNullOrEmpty(serviceConfiguration.Consul.HttpEndpoint))
+            //    {
+            //        // if not configured, the client will use the default value "127.0.0.1:8500"
+            //        cfg.Address = new Uri(serviceConfiguration.Consul.HttpEndpoint);
+            //    }
+            //}));
 
-            var connection = Configuration.GetConnectionString("UserDatabase");
-            services.AddDbContext<ResourceDbContext>(o => o.UseSqlServer(connection));
+            var connection = Configuration.GetConnectionString("ResoureDatabase");
+            services.AddDbContext<ResourceDbContext>(o => o.UseMySQL(connection));
+            services.AddScoped(typeof(IBaseServe<>), typeof(BaseServe<>));
 
-            services.AddAuthentication("Bearer").AddIdentityServerAuthentication(option => {
-                option.RequireHttpsMetadata = false;
-                option.Authority = "http://127.0.0.1:6002";
-                option.ApiName = "resource_api";
-            });
+            //services.AddAuthentication("Bearer").AddIdentityServerAuthentication(option => {
+            //    option.RequireHttpsMetadata = false;
+            //    option.Authority = "http://127.0.0.1:6002";
+            //    option.ApiName = "resource_api";
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, 
-            IHostingEnvironment env,
-            IApplicationLifetime applicationLifetime,
-            IOptions<ServiceDisvoveryOptions> serviceOptions,
-            IConsulClient consul)
-        {
-            if (env.IsDevelopment())
+        //public void Configure(IApplicationBuilder app, 
+        //    IHostingEnvironment env,
+        //    IApplicationLifetime applicationLifetime,
+        //    IOptions<ServiceDisvoveryOptions> serviceOptions,
+        //    IConsulClient consul)
+        //{
+            public void Configure(IApplicationBuilder app,
+            IHostingEnvironment env)
+            {
+                if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            //启动时候注册consul服务
-            applicationLifetime.ApplicationStarted.Register(() =>
-            {
-                RegisterStart(app, serviceOptions, consul);
-            });
-            //停止时候移除consul服务
-            applicationLifetime.ApplicationStopped.Register(() =>
-            {
-                RegisterStopped(app, serviceOptions, consul);
-            });
-            app.UseAuthentication();
+            ////启动时候注册consul服务
+            //applicationLifetime.ApplicationStarted.Register(() =>
+            //{
+            //    RegisterStart(app, serviceOptions, consul);
+            //});
+            ////停止时候移除consul服务
+            //applicationLifetime.ApplicationStopped.Register(() =>
+            //{
+            //    RegisterStopped(app, serviceOptions, consul);
+            //});
+            //app.UseAuthentication();
             app.UseMvc();
             //app.UseMvc(routes =>
             //{

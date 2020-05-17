@@ -13506,21 +13506,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\81219\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\81219\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\NewProject\\DistributedProject\\WebApplication\\User.API\\User.API.csproj",
+      "projectUniqueName": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\User.API\\User.API.csproj",
       "projectName": "User.API",
-      "projectPath": "F:\\NewProject\\DistributedProject\\WebApplication\\User.API\\User.API.csproj",
+      "projectPath": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\User.API\\User.API.csproj",
       "packagesPath": "C:\\Users\\81219\\.nuget\\packages\\",
-      "outputPath": "F:\\NewProject\\DistributedProject\\WebApplication\\User.API\\obj\\",
+      "outputPath": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\User.API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\81219\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -13594,7 +13590,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

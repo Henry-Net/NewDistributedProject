@@ -23,7 +23,7 @@ namespace API.Gateway
             {
                 config
                     .SetBasePath(hostingContext.HostingEnvironment.ContentRootPath)
-                    .AddJsonFile("ocelot.json");
+                    .AddJsonFile("ocelot.json",false,true);
                     //.AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", true, true)
                     //.AddJsonFile("ocelot.json")
                     //.AddEnvironmentVariables();

@@ -1,0 +1,16 @@
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\bin\Release\netcoreapp2.1\appsettings.Development.json
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\bin\Release\netcoreapp2.1\appsettings.json
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\bin\Release\netcoreapp2.1\Properties\launchSettings.json
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\bin\Release\netcoreapp2.1\User.API.deps.json
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\bin\Release\netcoreapp2.1\User.API.runtimeconfig.json
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\bin\Release\netcoreapp2.1\User.API.runtimeconfig.dev.json
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\bin\Release\netcoreapp2.1\User.API.dll
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\bin\Release\netcoreapp2.1\User.API.pdb
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\obj\Release\netcoreapp2.1\User.API.csprojAssemblyReference.cache
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\obj\Release\netcoreapp2.1\User.API.RazorAssemblyInfo.cache
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\obj\Release\netcoreapp2.1\User.API.RazorAssemblyInfo.cs
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\obj\Release\netcoreapp2.1\User.API.AssemblyInfoInputs.cache
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\obj\Release\netcoreapp2.1\User.API.AssemblyInfo.cs
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\obj\Release\netcoreapp2.1\User.API.RazorTargetAssemblyInfo.cache
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\obj\Release\netcoreapp2.1\User.API.dll
+D:\Data\Source\NewDistributedProject\WebApplication\User.API\obj\Release\netcoreapp2.1\User.API.pdb

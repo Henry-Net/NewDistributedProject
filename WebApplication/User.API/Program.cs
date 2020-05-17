@@ -14,6 +14,10 @@ namespace User.API
     {
         public static void Main(string[] args)
         {
+            //new ConfigurationBuilder()
+            //    .SetBasePath(Directory.GetCurrentDirectory())
+            //    .AddCommandLine(args)//支持命令行参数
+            //    .Build();
             CreateWebHostBuilder(args).Build().Run();
         }
 

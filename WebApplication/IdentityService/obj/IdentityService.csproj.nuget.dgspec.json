@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "F:\\NewProject\\DistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj": {}
+    "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj": {}
   },
   "projects": {
-    "F:\\NewProject\\DistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj": {
+    "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NewProject\\DistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj",
+        "projectUniqueName": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj",
         "projectName": "IdentityService",
-        "projectPath": "F:\\NewProject\\DistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj",
+        "projectPath": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj",
         "packagesPath": "C:\\Users\\81219\\.nuget\\packages\\",
-        "outputPath": "F:\\NewProject\\DistributedProject\\WebApplication\\IdentityService\\obj\\",
+        "outputPath": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\IdentityService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\81219\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -30,8 +27,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "F:\\NewProject\\DistributedProject\\WebApplication\\Resilience\\Resilience.csproj": {
-                "projectPath": "F:\\NewProject\\DistributedProject\\WebApplication\\Resilience\\Resilience.csproj"
+              "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\Resilience\\Resilience.csproj": {
+                "projectPath": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\Resilience\\Resilience.csproj"
               }
             }
           }
@@ -64,6 +61,10 @@
               "target": "Package",
               "version": "[2.1.2, )"
             },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -85,22 +86,19 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\NewProject\\DistributedProject\\WebApplication\\Resilience\\Resilience.csproj": {
+    "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\Resilience\\Resilience.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NewProject\\DistributedProject\\WebApplication\\Resilience\\Resilience.csproj",
+        "projectUniqueName": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\Resilience\\Resilience.csproj",
         "projectName": "Resilience",
-        "projectPath": "F:\\NewProject\\DistributedProject\\WebApplication\\Resilience\\Resilience.csproj",
+        "projectPath": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\Resilience\\Resilience.csproj",
         "packagesPath": "C:\\Users\\81219\\.nuget\\packages\\",
-        "outputPath": "F:\\NewProject\\DistributedProject\\WebApplication\\Resilience\\obj\\",
+        "outputPath": "D:\\Data\\Source\\NewDistributedProject\\WebApplication\\Resilience\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\81219\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -130,6 +128,10 @@
               "target": "Package",
               "version": "[2.1.1, )"
             },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -155,7 +157,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

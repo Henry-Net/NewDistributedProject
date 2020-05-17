@@ -42,6 +42,7 @@ namespace User.API
                 {
                     // if not configured, the client will use the default value "127.0.0.1:8500"
                     cfg.Address = new Uri(serviceConfiguration.Consul.HttpEndpoint);
+                    //cfg.Datacenter = "dc1";
                 }
             }));
 

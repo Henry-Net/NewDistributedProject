@@ -9,3 +9,11 @@ F:\NewProject\DistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2
 F:\NewProject\DistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.pdb
 F:\NewProject\DistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.dll
 F:\NewProject\DistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.pdb
+D:\Data\Source\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.csprojAssemblyReference.cache
+D:\Data\Source\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.AssemblyInfoInputs.cache
+D:\Data\Source\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.AssemblyInfo.cs
+D:\Data\Source\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.dll
+D:\Data\Source\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.pdb
+D:\Data\Source\NewDistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.deps.json
+D:\Data\Source\NewDistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.dll
+D:\Data\Source\NewDistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.pdb
