@@ -17,3 +17,12 @@ D:\Data\Source\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcore
 D:\Data\Source\NewDistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.deps.json
 D:\Data\Source\NewDistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.dll
 D:\Data\Source\NewDistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.pdb
+F:\source\repos\NewDistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.deps.json
+F:\source\repos\NewDistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.dll
+F:\source\repos\NewDistributedProject\WebApplication\Resilience\bin\Debug\netcoreapp2.1\Resilience.pdb
+F:\source\repos\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.csprojAssemblyReference.cache
+F:\source\repos\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.csproj.CoreCompileInputs.cache
+F:\source\repos\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.AssemblyInfoInputs.cache
+F:\source\repos\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.AssemblyInfo.cs
+F:\source\repos\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.dll
+F:\source\repos\NewDistributedProject\WebApplication\Resilience\obj\Debug\netcoreapp2.1\Resilience.pdb

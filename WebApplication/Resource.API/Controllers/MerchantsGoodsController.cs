@@ -22,20 +22,18 @@ namespace Resource.API.Controllers
         [HttpGet]
         public async Task<ActionResult<ResultList<Merchants_Goods>>> Get()
         {
-            ResultList<Merchants_Goods> list = new ResultList<Merchants_Goods>()
-            {
-                Code = CommonCode.Successful
-            };
-            list.List = await _baseServe.GetModelsAsync(_=>_.MainImage=="1");
-            list.Total = list.List != null ? list.List.Count : 0;
+            
+            var list = await _baseServe.GetModelsAsync();
+            var l1 = await _baseServe.GetListAsync(l => l.Id == 1);
             return Ok(list);
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public async Task<ActionResult<ResultModel<Merchants_Goods>>> Get(int id)
         {
-            return "value";
+            var model = await _baseServe.GetModelAsync(m=>m.Id == id);
+            return Ok(model);
         }
     }
 }

@@ -35,3 +35,12 @@ D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\bin\Debug\netco
 D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.dll
 D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.pdb
 D:\Data\Source\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.csprojAssemblyReference.cache
+F:\source\repos\NewDistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.deps.json
+F:\source\repos\NewDistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.dll
+F:\source\repos\NewDistributedProject\WebApplication\EntityModels\bin\Debug\netcoreapp2.1\EntityModels.pdb
+F:\source\repos\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.csprojAssemblyReference.cache
+F:\source\repos\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.csproj.CoreCompileInputs.cache
+F:\source\repos\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.AssemblyInfoInputs.cache
+F:\source\repos\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.AssemblyInfo.cs
+F:\source\repos\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.dll
+F:\source\repos\NewDistributedProject\WebApplication\EntityModels\obj\Debug\netcoreapp2.1\EntityModels.pdb

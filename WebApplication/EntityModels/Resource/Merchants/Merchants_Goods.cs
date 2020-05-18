@@ -14,7 +14,7 @@ namespace EntityModels.Resource.Merchants
 
         public string MainImage { get; set; }
 
-        public int Merchants_Goods_Id { get; set; }
+        public string Merchants_Code { get; set; }
 
     }
 }
