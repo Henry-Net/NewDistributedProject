@@ -75,7 +75,6 @@ F:\source\repos\NewDistributedProject\WebApplication\IdentityService\bin\Debug\n
 F:\source\repos\NewDistributedProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\Resilience.dll
 F:\source\repos\NewDistributedProject\WebApplication\IdentityService\bin\Debug\netcoreapp2.1\Resilience.pdb
 F:\source\repos\NewDistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.csprojAssemblyReference.cache
-F:\source\repos\NewDistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.csproj.CoreCompileInputs.cache
 F:\source\repos\NewDistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.RazorAssemblyInfo.cache
 F:\source\repos\NewDistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.RazorAssemblyInfo.cs
 F:\source\repos\NewDistributedProject\WebApplication\IdentityService\obj\Debug\netcoreapp2.1\IdentityService.AssemblyInfoInputs.cache

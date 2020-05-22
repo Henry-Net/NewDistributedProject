@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "Oyj33FfNxlHKXmpTKLLZuol0JF0k3ZsLDRvLhmTpxrRo3rlidgtt1RYvYUZEINF3vMnz1dRY6L1QXdlf5JGDYQ==",
-  "success": true,
+  "dgSpecHash": "qAwrM8MzEWKgbbRz6CpIz7WXM1eP5SRl3LS9KSqWVYbDix2MCTbiqEPsG2dLy9Uh5ukNAReQ7tPxCrZstsHSSA==",
+  "success": false,
   "projectFilePath": "F:\\source\\repos\\NewDistributedProject\\WebApplication\\IdentityService\\IdentityService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\dnsclient\\1.2.0\\dnsclient.1.2.0.nupkg.sha512",
@@ -147,7 +147,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.localization\\2.1.1\\microsoft.extensions.localization.2.1.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\2.1.1\\microsoft.extensions.localization.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging\\2.1.1\\microsoft.extensions.logging.2.1.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.2\\microsoft.extensions.logging.abstractions.3.1.2.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.2.0\\microsoft.extensions.logging.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging.configuration\\2.1.1\\microsoft.extensions.logging.configuration.2.1.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging.console\\2.1.1\\microsoft.extensions.logging.console.2.1.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging.debug\\2.1.1\\microsoft.extensions.logging.debug.2.1.1.nupkg.sha512",
@@ -290,10 +290,9 @@
   ],
   "logs": [
     {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "检测到的包版本在依赖项约束之外: Microsoft.AspNetCore.App 2.1.1 需要 Microsoft.Extensions.Logging.Abstractions (>= 2.1.1 && < 2.2.0)，但版本 Microsoft.Extensions.Logging.Abstractions 3.1.2 已解决。",
+      "code": "NU1107",
+      "level": "Error",
+      "message": "Microsoft.Extensions.Logging.Abstractions 中检测到版本冲突。直接安装/引用 Microsoft.Extensions.Logging.Abstractions 2.2.0 到项目 IdentityService 可解决此问题。 \r\n IdentityService -> Resilience -> Microsoft.Extensions.Logging.Abstractions (>= 2.2.0) \r\n IdentityService -> Microsoft.AspNetCore.App 2.1.1 -> Microsoft.Extensions.Logging.Abstractions (>= 2.1.1 && < 2.2.0).",
       "libraryId": "Microsoft.Extensions.Logging.Abstractions",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
